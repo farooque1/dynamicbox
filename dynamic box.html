@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Expanding Boxes</title>
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <main>
+
+  <div class="line">
+  <span class="heading">
+    Bundle & Save
+  </span>
+</div>
+    <div class="box" onclick="toggleBox(event, 1)">
+      <div class="pair-info">
+        <div>
+          <input type="radio" name="pairs" value="1">
+          <label>1 pair</label>
+          <div class="dropdown custom-dropdown" id="dropdown1" onclick="stopPropagation(event)">
+            <label for="color1">Color:</label>
+            <select id="color1"></select>
+            <label for="size1">Size:</label>
+            <select id="size1"></select>
+          </div>
+        </div>
+        <span>50% OFF</span>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(event, 2)">
+      <div class="pair-info">
+        <div>
+          <input type="radio" name="pairs" value="2">
+          <label>2 pairs</label>  
+          <div class="dropdown custom-dropdown" id="dropdown2" onclick="stopPropagation(event)">
+            <label for="color2">Color:</label>
+            <select id="color2"></select>
+            <label for="size2">Size:</label>
+            <select id="size2"></select>
+          </div>
+        </div>
+        <span>40% OFF</span>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(event, 3)">
+      <div class="pair-info">
+        <div>
+          <input type="radio" name="pairs" value="3">
+          <label>3 pairs</label>
+          <div class="dropdown custom-dropdown" id="dropdown3" onclick="stopPropagation(event)">
+            <label for="color3">Color:</label>
+            <select id="color3"></select>
+            <label for="size3">Size:</label>
+            <select id="size3"></select>
+          </div>
+        </div>
+        <span>30% OFF</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shipping-info">
+      <span>Free 2 Day Shipping</span>
+      <span>Total: DKK 360.00</span>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+  </footer>
+
+<script type="text/javascript" src="./dynamic.js"></script>
+
+</body>
+</html>
